@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" style="background:#070b14; font-family:'SF Mono', 'Roboto Mono', monospace;">
+  <defs>
+    <linearGradient id="gradCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="gradAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="30" y="25" width="940" height="65" rx="8" fill="#0d1424" stroke="#1e293b" stroke-width="1.5"/>
+  <text x="50" y="55" fill="#00f0ff" font-size="18" font-weight="bold" letter-spacing="1">ARINC 745 / RTCA DO-258A ADS-C OCEANIC SURVEILLANCE ARCHITECTURE</text>
+  <text x="50" y="74" fill="#64748b" font-size="11">FANS 1/A Datalink Avionics • Inmarsat/Iridium SATCOM • Shanwick/Gander ATC Ground Automation</text>
+  <rect x="830" y="42" width="120" height="28" rx="4" fill="#00f0ff" fill-opacity="0.15" stroke="#00f0ff" stroke-width="1"/>
+  <text x="890" y="60" fill="#00f0ff" font-size="10" font-weight="bold" text-anchor="middle">v1.0.0 CERTIFIED</text>
+
+  <!-- Left: Airborne Segment (Boeing 787-9 FMS / CMU) -->
+  <rect x="30" y="110" width="280" height="440" rx="8" fill="url(#gradCyan)" stroke="#00f0ff" stroke-width="1.5"/>
+  <text x="50" y="140" fill="#00f0ff" font-size="14" font-weight="bold">AIRBORNE AVIONICS (UAL745)</text>
+  <text x="50" y="160" fill="#94a3b8" font-size="10">Boeing 787-9 • FANS 1/A Datalink</text>
+
+  <rect x="50" y="180" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="205" fill="#e2e8f0" font-size="11" font-weight="bold">Flight Management Computer</text>
+  <text x="65" y="223" fill="#64748b" font-size="9">• Position (Lat/Lon/Alt FL370)</text>
+  <text x="65" y="238" fill="#64748b" font-size="9">• FOM 7 (RNP 1.0) • True Track 278°</text>
+
+  <rect x="50" y="270" width="240" height="85" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="295" fill="#10b981" font-size="11" font-weight="bold">ADS-C Contract Manager (ARINC 745)</text>
+  <text x="65" y="313" fill="#64748b" font-size="9">• Periodic Contract Engine (600s)</text>
+  <text x="65" y="328" fill="#64748b" font-size="9">• Event Engine (Wpt, Alt ±200ft, XTK 1.0NM)</text>
+  <text x="65" y="343" fill="#64748b" font-size="9">• Emergency Burst Downlink (60s)</text>
+
+  <rect x="50" y="370" width="240" height="75" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="395" fill="#f59e0b" font-size="11" font-weight="bold">ARINC 429 Discrete Cockpit Bus</text>
+  <text x="65" y="413" fill="#64748b" font-size="9">• Label 305: Status &amp; FOM (Bit 32 Odd)</text>
+  <text x="65" y="428" fill="#64748b" font-size="9">• Label 306: Seconds to Next &amp; Events</text>
+
+  <rect x="50" y="460" width="240" height="65" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="65" y="485" fill="#e2e8f0" font-size="11" font-weight="bold">Communications Mgmt Unit (CMU)</text>
+  <text x="65" y="503" fill="#64748b" font-size="9">• Inmarsat Aero-H+ / Iridium SBD</text>
+
+  <!-- Center: Space Segment -->
+  <rect x="360" y="110" width="280" height="440" rx="8" fill="url(#gradGreen)" stroke="#10b981" stroke-width="1.5"/>
+  <text x="380" y="140" fill="#10b981" font-size="14" font-weight="bold">DATALINK SPACE SEGMENT</text>
+  <text x="380" y="160" fill="#94a3b8" font-size="10">ACARS / ATN Oceanic Transport</text>
+
+  <circle cx="500" cy="230" r="45" fill="#090e1a" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="225" fill="#10b981" font-size="12" font-weight="bold" text-anchor="middle">🛰️ SATCOM</text>
+  <text x="500" y="242" fill="#64748b" font-size="9" text-anchor="middle">Inmarsat-4 / Iridium</text>
+
+  <rect x="380" y="310" width="240" height="105" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="335" fill="#e2e8f0" font-size="11" font-weight="bold">ADS-C Downlink Reports (DO-258A)</text>
+  <text x="395" y="353" fill="#64748b" font-size="9">• Basic Report Group (Lat, Lon, Alt, Time, FOM)</text>
+  <text x="395" y="368" fill="#64748b" font-size="9">• Earth Reference Group (Track, GS, VS)</text>
+  <text x="395" y="383" fill="#64748b" font-size="9">• Meteorological Group (Wind, SAT)</text>
+  <text x="395" y="398" fill="#64748b" font-size="9">• Projected Intent (Next Fix &amp; ETA)</text>
+
+  <rect x="380" y="435" width="240" height="90" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="395" y="460" fill="#f59e0b" font-size="11" font-weight="bold">Ground Earth Stations (GES)</text>
+  <text x="395" y="478" fill="#64748b" font-size="9">• SITA / ARINC Datalink Networks</text>
+  <text x="395" y="493" fill="#64748b" font-size="9">• Sub-second Oceanic Routing</text>
+
+  <!-- Right: Ground Automation -->
+  <rect x="690" y="110" width="280" height="440" rx="8" fill="url(#gradAmber)" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="710" y="140" fill="#f59e0b" font-size="14" font-weight="bold">OCEANIC ATC AUTOMATION</text>
+  <text x="710" y="160" fill="#94a3b8" font-size="10">Shanwick (EGGX) &amp; Gander (CZQX)</text>
+
+  <rect x="710" y="180" width="240" height="100" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="205" fill="#e2e8f0" font-size="11" font-weight="bold">Oceanic Flight Data Processing</text>
+  <text x="725" y="223" fill="#64748b" font-size="9">• Contract Uplink Dispatcher</text>
+  <text x="725" y="238" fill="#64748b" font-size="9">• NAT-OTS 30/30 NM Separation</text>
+  <text x="725" y="253" fill="#64748b" font-size="9">• Automated 30°W FIR Transfer</text>
+
+  <rect x="710" y="300" width="240" height="115" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="325" fill="#00f0ff" font-size="11" font-weight="bold">10-Point Normative Auditor</text>
+  <text x="725" y="343" fill="#64748b" font-size="9">• ARINC 745 Contract Types (Pass)</text>
+  <text x="725" y="358" fill="#64748b" font-size="9">• RTCA DO-258A Groups (Pass)</text>
+  <text x="725" y="373" fill="#64748b" font-size="9">• ARINC 429 Odd Parity (Pass)</text>
+  <text x="725" y="388" fill="#64748b" font-size="9">• FAA AC 20-140C Compliance (Pass)</text>
+  <text x="725" y="403" fill="#10b981" font-size="9" font-weight="bold">STATUS: 100% NORMALLY CERTIFIED</text>
+
+  <rect x="710" y="435" width="240" height="90" rx="6" fill="#090e1a" stroke="#1e293b"/>
+  <text x="725" y="460" fill="#e2e8f0" font-size="11" font-weight="bold">ATC Controller Oceanic Radar</text>
+  <text x="725" y="478" fill="#64748b" font-size="9">• Real-time Trajectory Extrapolation</text>
+  <text x="725" y="493" fill="#64748b" font-size="9">• Excursion Alerting &amp; Conformance</text>
+
+  <path d="M 310 215 L 360 215" stroke="#00f0ff" stroke-width="2"/>
+  <path d="M 640 215 L 690 215" stroke="#10b981" stroke-width="2"/>
+</svg>
